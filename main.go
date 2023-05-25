@@ -336,6 +336,8 @@ func init() {
 }
 
 func main() {
+	os.Setenv("CHARM_HOST", "127.0.0.1")
+
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
